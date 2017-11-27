@@ -419,7 +419,7 @@
                                     scope.video.width = youtubeDimensions.width;
                                     scope.video.height = youtubeDimensions.height;
                                     scope.video.host = 'youtube';
-                                    scope.video.embedSrc = $sce.trustAsResourceUrl('https://www.youtube.com/embed/' + RegExp.$1 + '?rel=0&autoplay=0');
+                                    scope.video.embedSrc = $sce.trustAsResourceUrl('https://www.youtube.com/embed/' + RegExp.$1 + '?rel=0&autoplay=0&fs=0');
 
                                 }
                                 console.log(youtubeDimensions);
@@ -878,6 +878,5 @@
                 }
             };
         });
-
 })();
 
